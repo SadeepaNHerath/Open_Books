@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f657bc1-1999-474f-9374-9649f29e5407" name="Changes" comment="login Implementation">
-      <change afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/dto/response/ExceptionResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/enums/BusinessErrorCodes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/handler/GlobalExceptionHandler.java" afterDir="false" />
+    <list default="true" id="2f657bc1-1999-474f-9374-9649f29e5407" name="Changes" comment="Exception Handling">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/enums/BusinessErrorCodes.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/enums/BusinessErrorCodes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/service/impl/AuthenticationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/service/impl/AuthenticationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/resources/application-dev.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,11 +133,20 @@
       <option name="project" value="LOCAL" />
       <updated>1730975758224</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Exception Handling">
+      <option name="closed" value="true" />
+      <created>1730981147338</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1730981147338</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="login Implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="login Implementation" />
+    <MESSAGE value="Exception Handling" />
+    <option name="LAST_COMMIT_MESSAGE" value="Exception Handling" />
   </component>
 </project>

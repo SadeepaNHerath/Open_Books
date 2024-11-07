@@ -7,7 +7,7 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
-    show-sql: false
+    show-sql: true
     properties:
       hibernate:
         format_sql: true
@@ -31,7 +31,7 @@ spring:
 application:
   security:
     jwt:
-      secret-key: +/s:/MTK3>._g+E,M<]V+:+,vmq}S<5~9p@3%:43JGDSlwV'TIn,@5b,1P(vRNj
+      secret-key: DMWaj3ERs8xiBXhmWHRskrQLT/uy6nJ+cXwr22lU3Ha2jSIJNVadKYa7T5OwrtZZWcx3bca6IyzrFP4RZ18XmQ==
       expiration: 8640000
   mailing:
       frontend:
