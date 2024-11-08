@@ -1,7 +1,7 @@
 package edu.book.socialnetwork;
 
-import edu.book.socialnetwork.entity.RoleEntity;
-import edu.book.socialnetwork.repository.RoleRepository;
+import edu.book.socialnetwork.domain.user.entity.RoleEntity;
+import edu.book.socialnetwork.domain.user.repository.RoleRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

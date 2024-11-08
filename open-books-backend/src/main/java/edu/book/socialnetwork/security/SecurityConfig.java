@@ -1,5 +1,6 @@
 package edu.book.socialnetwork.security;
 
+import edu.book.socialnetwork.security.JwtFilter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

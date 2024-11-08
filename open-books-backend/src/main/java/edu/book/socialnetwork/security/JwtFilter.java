@@ -1,6 +1,6 @@
 package edu.book.socialnetwork.security;
 
-import edu.book.socialnetwork.service.JwtService;
+import edu.book.socialnetwork.domain.user.service.JwtService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
