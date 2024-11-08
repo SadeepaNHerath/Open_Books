@@ -8,7 +8,6 @@ import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
 import java.util.List;
-import java.util.stream.DoubleStream;
 
 @EqualsAndHashCode(callSuper = true)
 @Data

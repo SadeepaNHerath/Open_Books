@@ -1,6 +1,5 @@
 package edu.book.socialnetwork.service.impl;
 
-import edu.book.socialnetwork.entity.BookEntity;
 import edu.book.socialnetwork.service.FileStorageService;
 import jakarta.annotation.Nonnull;
 import lombok.RequiredArgsConstructor;
@@ -22,6 +21,7 @@ public class FileStorageServiceImpl implements FileStorageService {
 
     @Value("${application.file.upload.photos-output-path}")
     private String fileUploadDirectory;
+
     @Override
     public String saveFile(
             @Nonnull MultipartFile sourceFile,
@@ -49,7 +49,7 @@ public class FileStorageServiceImpl implements FileStorageService {
             Files.write(targetPath, sourceFile.getBytes());
             log.info("File saved to disk: {}", targetFilePath);
             return targetFilePath;
-        }catch (IOException e){
+        } catch (IOException e) {
             log.error("Failed to save file to disk: {}", targetFilePath, e);
         }
         return null;

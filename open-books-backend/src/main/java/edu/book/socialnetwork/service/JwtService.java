@@ -3,7 +3,6 @@ package edu.book.socialnetwork.service;
 import io.jsonwebtoken.Claims;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Function;
 
