@@ -1,8 +1,8 @@
 package edu.book.socialnetwork.core.handler;
 
+import edu.book.socialnetwork.core.exception.OperationNotPermittedException;
 import edu.book.socialnetwork.domain.common.dto.ExceptionResponse;
 import edu.book.socialnetwork.shared.enums.BusinessErrorCodes;
-import edu.book.socialnetwork.core.exception.OperationNotPermittedException;
 import jakarta.mail.MessagingException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -33,6 +33,7 @@ public class GlobalExceptionHandler {
                                 .build()
                 );
     }
+
     @ExceptionHandler(DisabledException.class)
     public ResponseEntity<ExceptionResponse> handleException(DisabledException exp) {
         return ResponseEntity
@@ -97,7 +98,7 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(Exception.class)
     public ResponseEntity<ExceptionResponse> handleException(Exception exp) {
-        exp.printStackTrace();
+        exp.printStackTrace(); // for debugging purposes. for any new exception this is used.
         return ResponseEntity
                 .status(HttpStatus.INTERNAL_SERVER_ERROR)
                 .body(

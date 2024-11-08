@@ -1,8 +1,10 @@
 package edu.book.socialnetwork.domain.user.entity;
 
-import edu.book.socialnetwork.domain.user.entity.UserEntity;
 import jakarta.persistence.*;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
 

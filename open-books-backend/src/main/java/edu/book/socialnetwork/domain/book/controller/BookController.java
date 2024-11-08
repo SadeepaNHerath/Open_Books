@@ -3,8 +3,8 @@ package edu.book.socialnetwork.domain.book.controller;
 import edu.book.socialnetwork.domain.book.dto.request.BookRequest;
 import edu.book.socialnetwork.domain.book.dto.response.BookResponse;
 import edu.book.socialnetwork.domain.book.dto.response.BorrowedBookResponse;
-import edu.book.socialnetwork.domain.common.dto.PageResponse;
 import edu.book.socialnetwork.domain.book.service.BookService;
+import edu.book.socialnetwork.domain.common.dto.PageResponse;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
@@ -46,7 +46,7 @@ public class BookController {
             @RequestParam(name = "page", defaultValue = "0", required = false) int page,
             @RequestParam(name = "size", defaultValue = "10", required = false) int size,
             Authentication connectedUser
-    ){
+    ) {
         return ResponseEntity.ok(bookService.findAllBooksByOwner(page, size, connectedUser));
     }
 
@@ -55,7 +55,7 @@ public class BookController {
             @RequestParam(name = "page", defaultValue = "0", required = false) int page,
             @RequestParam(name = "size", defaultValue = "10", required = false) int size,
             Authentication connectedUser
-    ){
+    ) {
         return ResponseEntity.ok(bookService.findAllBorrowedBooks(page, size, connectedUser));
     }
 
@@ -64,7 +64,7 @@ public class BookController {
             @RequestParam(name = "page", defaultValue = "0", required = false) int page,
             @RequestParam(name = "size", defaultValue = "10", required = false) int size,
             Authentication connectedUser
-    ){
+    ) {
         return ResponseEntity.ok(bookService.findAllReturnedBooks(page, size, connectedUser));
     }
 
@@ -75,6 +75,7 @@ public class BookController {
     ) {
         return ResponseEntity.ok(bookService.updateShareableStatus(bookId, connectedUser));
     }
+
     @PatchMapping("/archived/{book-id}")
     public ResponseEntity<Integer> updateArchivedStatus(
             @PathVariable("book-id") Integer bookId,
@@ -98,7 +99,6 @@ public class BookController {
     ) {
         return ResponseEntity.ok(bookService.returnBorrowedBook(bookId, connectedUser));
     }
-
 
 
     @PatchMapping("/borrow/return/approved/{book-id}")

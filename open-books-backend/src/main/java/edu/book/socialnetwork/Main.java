@@ -18,11 +18,11 @@ public class Main {
     }
 
     @Bean
-	public CommandLineRunner runner(RoleRepository roleRepository) {
-		return args -> {
-			if (roleRepository.findByName("USER").isEmpty()) {
-				roleRepository.save(RoleEntity.builder().name("USER").build());
-			}
-		};
-	}
+    public CommandLineRunner runner(RoleRepository roleRepository) {
+        return args -> {
+            if (roleRepository.findByName("USER").isEmpty()) {
+                roleRepository.save(RoleEntity.builder().name("USER").build());
+            }
+        };
+    }
 }

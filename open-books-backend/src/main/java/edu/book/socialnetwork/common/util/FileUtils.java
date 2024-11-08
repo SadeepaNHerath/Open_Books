@@ -11,13 +11,13 @@ import java.nio.file.Path;
 @Slf4j
 public class FileUtils {
     public static byte[] readFileFromLocation(String fileUrl) {
-        if (StringUtils.isBlank(fileUrl)){
+        if (StringUtils.isBlank(fileUrl)) {
             return null;
         }
         try {
             Path filePath = new File(fileUrl).toPath();
             return Files.readAllBytes(filePath);
-        }catch (IOException e){
+        } catch (IOException e) {
             log.warn("Error reading file from location: {}", fileUrl, e);
         }
         return null;

@@ -9,6 +9,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 public interface BookService {
     Integer save(BookRequest bookRequest, Authentication connectedUser);
+
     BookResponse findById(Integer bookId);
 
     PageResponse<BookResponse> findAllBooks(int page, int size, Authentication connectedUser);

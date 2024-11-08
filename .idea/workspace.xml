@@ -4,61 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f657bc1-1999-474f-9374-9649f29e5407" name="Changes" comment="fixed errors in repositories + others">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/config/ApplicationAuditAware.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/core/config/ApplicationAuditAware.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/config/BeansConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/core/config/BeansConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/config/OpenApiConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/core/config/OpenApiConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/controller/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/user/controller/AuthenticationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/book/controller/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/controller/FeedbackController.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/feedback/controller/FeedbackController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/dto/request/AuthenticationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/user/dto/request/AuthenticationRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/dto/request/BookRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/book/dto/request/BookRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/dto/request/FeedbackRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/feedback/dto/request/FeedbackRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/dto/request/RegistrationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/user/dto/request/RegistrationRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/dto/response/AuthenticationResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/user/dto/response/AuthenticationResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/dto/response/BookResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/book/dto/response/BookResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/dto/response/BorrowedBookResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/book/dto/response/BorrowedBookResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/dto/response/ExceptionResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/common/dto/ExceptionResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/dto/response/FeedbackResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/feedback/dto/response/FeedbackResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/dto/response/PageResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/common/dto/PageResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/common/entity/BaseEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/entity/BookEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/book/entity/BookEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/entity/BookTransactionHistoryEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/transaction/entity/BookTransactionHistoryEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/entity/FeedbackEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/feedback/entity/FeedbackEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/entity/RoleEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/user/entity/RoleEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/entity/TokenEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/user/entity/TokenEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/user/entity/UserEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/enums/BusinessErrorCodes.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/shared/enums/BusinessErrorCodes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/enums/EmailTemplateName.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/shared/enums/EmailTemplateName.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/exception/OperationNotPermittedException.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/core/exception/OperationNotPermittedException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/handler/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/core/handler/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/mapper/BookMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/book/mapper/BookMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/mapper/FeedbackMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/feedback/mapper/FeedbackMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/mapper/impl/BookMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/book/mapper/impl/BookMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/mapper/impl/FeedbackMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/feedback/mapper/impl/FeedbackMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/repository/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/book/repository/BookRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/repository/BookTransactionHistoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/transaction/repository/BookTransactionHistoryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/repository/FeedbackRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/feedback/repository/FeedbackRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/repository/RoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/user/repository/RoleRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/repository/TokenRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/user/repository/TokenRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/user/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/security/JwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/security/JwtFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/service/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/user/service/AuthenticationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/book/service/BookService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/service/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/user/service/EmailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/service/FeedbackService.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/feedback/service/FeedbackService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/service/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/user/service/JwtService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/service/impl/AuthenticationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/user/service/impl/AuthenticationServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/service/impl/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/book/service/impl/BookServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/service/impl/EmailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/user/service/impl/EmailServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/service/impl/FeedbackServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/feedback/service/impl/FeedbackServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/service/impl/JwtServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/user/service/impl/JwtServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/service/impl/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/user/service/impl/UserDetailsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/specification/BookSpecification.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/book/specification/BookSpecification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/util/FileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/common/util/FileUtils.java" afterDir="false" />
+    <list default="true" id="2f657bc1-1999-474f-9374-9649f29e5407" name="Changes" comment="changed structure for domain-centric Structure">
+      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/common/util/FileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/common/util/FileUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/core/config/BeansConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/core/config/BeansConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/core/exception/OperationNotPermittedException.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/core/exception/OperationNotPermittedException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/core/handler/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/core/handler/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/book/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/book/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/book/dto/request/BookRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/book/dto/request/BookRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/book/entity/BookEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/book/entity/BookEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/book/mapper/impl/BookMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/book/mapper/impl/BookMapperImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +50,7 @@
     "Application.Main.executor": "Run",
     "Application.OpenBooksApplication.executor": "Run",
     "DefaultHtmlFileTemplate": "HTML File",
+    "JUnit.edu.book.socialnetwork in open-books-project.executor": "Coverage",
     "Maven.open-books-project [clean,install].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -249,7 +204,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731070024044</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="changed structure for domain-centric Structure">
+      <option name="closed" value="true" />
+      <created>1731084181075</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1731084181075</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -259,7 +222,8 @@
     <MESSAGE value="book cover upload + feedback + api document" />
     <MESSAGE value="removed some unused imports" />
     <MESSAGE value="fixed errors in repositories + others" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed errors in repositories + others" />
+    <MESSAGE value="changed structure for domain-centric Structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed structure for domain-centric Structure" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -275,5 +239,10 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/open_books_backend$edu_book_socialnetwork_in_open_books_project.ic" NAME="edu.book.socialnetwork in open-books-project Coverage Results" MODIFIED="1731084094291" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>edu.book.socialnetwork.*</FILTER>
+    </SUITE>
   </component>
 </project>

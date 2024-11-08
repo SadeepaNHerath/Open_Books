@@ -1,8 +1,8 @@
 package edu.book.socialnetwork.domain.transaction.entity;
 
 import edu.book.socialnetwork.domain.book.entity.BookEntity;
-import edu.book.socialnetwork.domain.user.entity.UserEntity;
 import edu.book.socialnetwork.domain.common.entity.BaseEntity;
+import edu.book.socialnetwork.domain.user.entity.UserEntity;
 import jakarta.persistence.Entity;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;

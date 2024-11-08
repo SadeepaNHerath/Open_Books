@@ -1,8 +1,8 @@
 package edu.book.socialnetwork.domain.book.entity;
 
 import edu.book.socialnetwork.domain.common.entity.BaseEntity;
-import edu.book.socialnetwork.domain.transaction.entity.BookTransactionHistoryEntity;
 import edu.book.socialnetwork.domain.feedback.entity.FeedbackEntity;
+import edu.book.socialnetwork.domain.transaction.entity.BookTransactionHistoryEntity;
 import edu.book.socialnetwork.domain.user.entity.UserEntity;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

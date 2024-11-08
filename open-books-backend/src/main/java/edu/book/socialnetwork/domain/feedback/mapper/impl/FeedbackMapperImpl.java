@@ -1,8 +1,8 @@
 package edu.book.socialnetwork.domain.feedback.mapper.impl;
 
+import edu.book.socialnetwork.domain.book.entity.BookEntity;
 import edu.book.socialnetwork.domain.feedback.dto.request.FeedbackRequest;
 import edu.book.socialnetwork.domain.feedback.dto.response.FeedbackResponse;
-import edu.book.socialnetwork.domain.book.entity.BookEntity;
 import edu.book.socialnetwork.domain.feedback.entity.FeedbackEntity;
 import edu.book.socialnetwork.domain.feedback.mapper.FeedbackMapper;
 import org.springframework.stereotype.Service;
