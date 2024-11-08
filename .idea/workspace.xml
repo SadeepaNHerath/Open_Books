@@ -4,47 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f657bc1-1999-474f-9374-9649f29e5407" name="Changes" comment="fixed error in log in + changed secret key">
-      <change afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/config/ApplicationAuditAware.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/config/OpenApiConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/controller/BookController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/controller/FeedbackController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/dto/request/BookRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/dto/request/FeedbackRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/dto/response/BookResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/dto/response/BorrowedBookResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/dto/response/FeedbackResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/dto/response/PageResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/entity/BaseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/entity/BookEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/entity/BookTransactionHistoryEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/entity/FeedbackEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/exception/OperationNotPermittedException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/mapper/BookMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/mapper/FeedbackMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/mapper/impl/BookMapperImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/mapper/impl/FeedbackMapperImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/repository/BookRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/repository/BookTransactionHistoryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/repository/FeedbackRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/service/BookService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/service/FeedbackService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/service/FileStorageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/service/impl/BookServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/service/impl/FeedbackServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/service/impl/FileStorageServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/specification/BookSpecification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/util/FileUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="2f657bc1-1999-474f-9374-9649f29e5407" name="Changes" comment="removed some unused imports">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/config/BeansConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/config/BeansConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/entity/RoleEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/entity/RoleEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/entity/TokenEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/entity/TokenEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/entity/UserEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/enums/BusinessErrorCodes.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/enums/BusinessErrorCodes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/handler/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/handler/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/service/impl/AuthenticationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/service/impl/AuthenticationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/repository/BookTransactionHistoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/repository/BookTransactionHistoryRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,14 +151,32 @@
       <option name="project" value="LOCAL" />
       <updated>1730984547318</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="book cover upload + feedback + api document">
+      <option name="closed" value="true" />
+      <created>1731069048993</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1731069048993</updated>
+    </task>
+    <task id="LOCAL-00005" summary="removed some unused imports">
+      <option name="closed" value="true" />
+      <created>1731069434244</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1731069434244</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="login Implementation" />
     <MESSAGE value="Exception Handling" />
     <MESSAGE value="fixed error in log in + changed secret key" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed error in log in + changed secret key" />
+    <MESSAGE value="book cover upload + feedback + api document" />
+    <MESSAGE value="removed some unused imports" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed some unused imports" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
