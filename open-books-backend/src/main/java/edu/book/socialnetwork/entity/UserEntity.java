@@ -24,7 +24,6 @@ import java.util.stream.Collectors;
 @SuperBuilder
 @NoArgsConstructor
 @AllArgsConstructor
-@ToString
 @Entity
 @Table(name = "user")
 @EntityListeners(AuditingEntityListener.class)
@@ -47,13 +46,11 @@ public class UserEntity implements UserDetails, Principal {
     @ManyToMany(fetch = FetchType.EAGER)
     private List<RoleEntity> roles;
 
-/*
     @OneToMany(mappedBy = "owner")
-    private List<Book> books;
+    private List<BookEntity> books;
 
     @OneToMany(mappedBy = "user")
-    private List<BookTransactionHistory> histories;
-*/
+    private List<BookTransactionHistoryEntity> histories;
 
     @CreatedDate
     @Column(nullable = false, updatable = false)

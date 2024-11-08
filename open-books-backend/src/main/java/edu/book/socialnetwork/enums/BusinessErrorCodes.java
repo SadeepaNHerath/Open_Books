@@ -3,6 +3,7 @@ package edu.book.socialnetwork.enums;
 import lombok.Getter;
 import org.springframework.http.HttpStatus;
 
+@Getter
 public enum BusinessErrorCodes {
     NO_CODE(0,HttpStatus.NOT_IMPLEMENTED, "No code"),
     INCORRECT_CURRENT_PASSWORD(300, HttpStatus.BAD_REQUEST, "Incorrect current password"),
@@ -12,11 +13,8 @@ public enum BusinessErrorCodes {
     BAD_CREDENTIALS(304, HttpStatus.FORBIDDEN, "Login email or password is incorrect"),
     ;
 
-    @Getter
     private final int code;
-    @Getter
     private final String description;
-    @Getter
     private final HttpStatus httpStatus;
 
     BusinessErrorCodes(int code, HttpStatus httpStatus, String description) {

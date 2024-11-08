@@ -93,7 +93,7 @@ public class AuthenticationServiceImpl implements AuthenticationService {
     }
 
     @Override
-//    @Transactional
+    @Transactional
     public void activateAccount(String token) throws MessagingException {
         TokenEntity savedToken = tokenRepository.findByToken(token)
                 .orElseThrow(() -> new RuntimeException("Invalid token"));
