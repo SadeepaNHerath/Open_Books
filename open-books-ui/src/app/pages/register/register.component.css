@@ -1,0 +1,59 @@
+.container-fluid {
+    background-color: #f8f9fa;
+}
+
+.login-container {
+    max-width: 25rem;
+    margin: auto;
+    border-radius: 0.625rem;
+    background-color: #f5f5dc;
+}
+
+.login-container h3 {
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    color: #0056b3;
+}
+
+.input-group {
+    border-radius: 0.3125rem;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-link {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.btn-link:hover {
+    text-decoration: underline;
+}
+
+.alert {
+    border-radius: 0.3125rem;
+}
+
+.alert-success {
+    background-color: #28a745;
+    color: white;
+}
+
+.alert-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+@media (max-width: 36rem) {
+    .login-container {
+        padding: 1.25rem;
+    }
+}
