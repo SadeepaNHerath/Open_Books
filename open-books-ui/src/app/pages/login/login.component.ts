@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { AuthenticationRequest } from '../../services/models/authentication-request';
-import { CommonModule} from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { AuthenticationRequest } from '../../services/models/authentication-request';
 import { Router } from '@angular/router';
 import { AuthenticationService } from '../../services/services/authentication.service';
 import { TokenService } from '../../services/token/token.service';
@@ -14,18 +14,16 @@ import { TokenService } from '../../services/token/token.service';
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
-forgotPassword() {
-throw new Error('Method not implemented.');
-}
-  authRequest: AuthenticationRequest = {email: '', password: ''};
+
+  authRequest: AuthenticationRequest = { email: '', password: '' };
   errorMsg: Array<string> = [];
 
   constructor(
     private router: Router,
     private authService: AuthenticationService,
     private tokenService: TokenService,
-  ){}
-  
+  ) { }
+
   login() {
     this.errorMsg = [];
     this.authService.authenticate({
@@ -48,6 +46,10 @@ throw new Error('Method not implemented.');
 
   register() {
     this.router.navigate(['register']);
+  }
+
+  forgotPassword() {
+    throw new Error('Method not implemented.');
   }
 
 }

@@ -21,30 +21,29 @@ export class RegisterComponent {
   constructor(
     private router: Router,
     private authService: AuthenticationService
-  ) {
-
-  }
+  ) { }
 
   login() {
-    this.router.navigate(['/login']);
+    this.router.navigate(['login']);
   }
 
   register() {
     this.errorMsg = [];
     this.authService.register({
       body: this.registerRequest
-    }).subscribe({
-      next: () => {
-        this.router.navigate(['activate-account']);
-      },
-      error: (err) => {
-        console.log(err);
-        if (err.error.validationErrors) {
-          this.errorMsg = err.error.validationErrors;
-        } else {
-          this.errorMsg.push(err.error.errorMsg);
-        }
-      }
     })
+      .subscribe({
+        next: () => {
+          this.router.navigate(['activate-account']);
+        },
+        error: (err) => {
+          console.log(err);
+          if (err.error.validationErrors) {
+            this.errorMsg = err.error.validationErrors;
+          } else {
+            this.errorMsg.push(err.error.errorMsg);
+          }
+        }
+      });
   }
 }
