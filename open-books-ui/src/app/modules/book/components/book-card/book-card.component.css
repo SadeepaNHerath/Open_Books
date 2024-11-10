@@ -1,0 +1,8 @@
+div.card {
+    max-height: 28.125rem;
+    min-height: 28.125rem;
+}
+
+i {
+    cursor: pointer;
+}

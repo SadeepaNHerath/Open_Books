@@ -203,8 +203,8 @@ public class BookServiceImpl implements BookService {
             throw new OperationNotPermittedException("This book is not available for borrowing since it is archived or not shareable.");
         }
         UserEntity user = ((UserEntity) connectedUser.getPrincipal());
-        if (Objects.equals(book.getOwner().getId(), user.getId())) {
-            throw new OperationNotPermittedException("You cannot borrow or return your own book.");
+        if (!Objects.equals(book.getOwner().getId(), user.getId())) {
+            throw new OperationNotPermittedException("You cannot return a book that do not belongs to you.");
         }
         BookTransactionHistoryEntity bookTransactionHistory = bookTransactionHistoryRepository.findByBookIdAndOwnerId(bookId, user.getId())
                 .orElseThrow(() -> new OperationNotPermittedException("The book is not approved yet. So you cannot approve the return."));

@@ -1,0 +1,21 @@
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: blue;
+}
+
+ul li a:hover {
+    color: red;
+}
+
+ul li a.active {
+    font-weight: bold;
+}

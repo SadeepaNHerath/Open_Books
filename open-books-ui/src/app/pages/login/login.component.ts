@@ -27,20 +27,20 @@ export class LoginComponent {
   login() {
     this.errorMsg = [];
     this.authService.authenticate({
-      body: this.authRequest
+        body: this.authRequest
     }).subscribe({
-      next: (res) => {
-        this.tokenService.token = res.token as string;
-        this.router.navigate(['books']);
-      },
-      error: (err) => {
-        console.log(err);
-        if (err.error.validationErrors) {
-          this.errorMsg = err.error.validationErrors;
-        } else {
-          this.errorMsg.push(err.error.errorMsg);
+        next: (res) => {
+            this.tokenService.token = res.token as string;
+            this.router.navigate(['books']);
+        },
+        error: (err) => {
+            console.log(err);
+            if (err.error.validationErrors) {
+                this.errorMsg = err.error.validationErrors;
+            } else {
+                this.errorMsg.push(err.error.errorMsg);
+            }
         }
-      }
     });
   }
 
