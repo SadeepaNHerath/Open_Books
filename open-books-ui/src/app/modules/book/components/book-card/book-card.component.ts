@@ -15,6 +15,7 @@ export class BookCardComponent {
   private _book: BookResponse = {};
   private _manage: boolean = false;
   private _bookCover: string | undefined = '';
+  isHovered = false;
 
   @Output() private share: EventEmitter<BookResponse> = new EventEmitter<BookResponse>();
   @Output() private archive: EventEmitter<BookResponse> = new EventEmitter<BookResponse>();

@@ -6,3 +6,39 @@ div.card {
 i {
     cursor: pointer;
 }
+
+.book-card {
+    transition: all 0.3s ease;
+    border-width: 2px;
+  }
+  
+  .book-cover {
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+  
+  .synopsis {
+    font-size: 0.9rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .meta-info {
+    font-size: 0.9rem;
+  }
+  
+  .action-buttons button {
+    transition: transform 0.2s ease;
+  }
+  
+  .action-buttons button:hover {
+    transform: scale(1.2);
+  }
+  
+  .badge {
+    font-size: 0.8rem;
+    padding: 0.5em 0.7em;
+  }

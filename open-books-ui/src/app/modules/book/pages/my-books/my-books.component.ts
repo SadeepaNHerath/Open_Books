@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PageResponseBookResponse } from '../../../../services/models/page-response-book-response';
 import { BookService } from '../../../../services/services/book.service';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { BookResponse } from '../../../../services/models/book-response';
 import { CommonModule } from '@angular/common';
 import { BookCardComponent } from '../../components/book-card/book-card.component';
@@ -9,7 +9,7 @@ import { BookCardComponent } from '../../components/book-card/book-card.componen
 @Component({
   selector: 'app-my-books',
   standalone: true,
-  imports: [CommonModule, BookCardComponent],
+  imports: [CommonModule, BookCardComponent,RouterLink],
   templateUrl: './my-books.component.html',
   styleUrl: './my-books.component.css'
 })
