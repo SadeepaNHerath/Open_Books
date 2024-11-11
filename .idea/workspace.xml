@@ -6,10 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2f657bc1-1999-474f-9374-9649f29e5407" name="Changes" comment="full format and improve imports">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-ui/src/app/modules/book/components/menu/menu.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-ui/src/app/modules/book/components/menu/menu.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-ui/src/app/modules/book/components/menu/menu.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-ui/src/app/modules/book/components/menu/menu.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-ui/src/app/modules/book/pages/manage-books/manage-books.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-ui/src/app/modules/book/pages/manage-books/manage-books.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-ui/src/app/modules/book/pages/my-books/my-books.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-ui/src/app/modules/book/pages/my-books/my-books.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

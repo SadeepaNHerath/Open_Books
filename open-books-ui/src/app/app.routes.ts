@@ -5,6 +5,10 @@ import { ActivateAccountComponent } from './pages/activate-account/activate-acco
 import { authGuard } from './services/guard/auth.guard';
 
 export const routes: Routes = [
+    {   path: '',
+        redirectTo: '/login',
+        pathMatch: 'full' 
+    },
     {
         path: 'login',
         component: LoginComponent
