@@ -6,6 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="2f657bc1-1999-474f-9374-9649f29e5407" name="Changes" comment="full format and improve imports">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/book/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/book/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/feedback/controller/FeedbackController.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/feedback/controller/FeedbackController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/user/controller/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/user/controller/AuthenticationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-books-ui/src/openapi/openapi.json" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-ui/src/openapi/openapi.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,6 +259,11 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/security/SecurityConfig.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

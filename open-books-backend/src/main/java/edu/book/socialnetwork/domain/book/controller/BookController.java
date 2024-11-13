@@ -14,6 +14,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/books")
 @RequiredArgsConstructor
