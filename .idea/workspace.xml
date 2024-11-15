@@ -5,12 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f657bc1-1999-474f-9374-9649f29e5407" name="Changes" comment="full format and improve imports">
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/backend/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/frontend/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/book/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/book/controller/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/feedback/controller/FeedbackController.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/feedback/controller/FeedbackController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/user/controller/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/user/controller/AuthenticationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-books-backend/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-books-backend/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-books-backend/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-books-backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/user/service/impl/JwtServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/user/service/impl/JwtServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/security/JwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/security/JwtFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-ui/src/openapi/openapi.json" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-ui/src/openapi/openapi.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-books-ui/src/app/services/interceptor/http-token.interceptor.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-ui/src/app/services/interceptor/http-token.interceptor.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-books-ui/src/app/services/interceptor/http-token.interceptor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-ui/src/app/services/interceptor/http-token.interceptor.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +67,7 @@
     &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Projects/open-books&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Projects/open-books/docker/frontend&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
@@ -75,13 +83,14 @@
       <recent name="edu.book.socialnetwork.service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Projects\open-books\docker\frontend" />
       <recent name="E:\Projects\open-books\open-books-backend\open-books-backend\src\main\java\edu\book\socialnetwork\domain\user\dto" />
       <recent name="E:\Projects\open-books\open-books-backend\open-books-backend\src\main\java\edu\book\socialnetwork\domain\transaction\dto" />
       <recent name="E:\Projects\open-books\open-books-backend\open-books-backend\src\main\java\edu\book\socialnetwork\domain\user" />
       <recent name="E:\Projects\open-books\open-books-backend\open-books-backend\src\main\java\edu\book\socialnetwork\domain\transaction" />
-      <recent name="E:\Projects\open-books\open-books-backend\open-books-backend\src\main\java\edu\book\socialnetwork\domain\feedback" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Projects\open-books\open-books-backend" />
       <recent name="E:\Projects\open-books\open-books-ui\src" />
       <recent name="E:\Projects\open-books\open-books-backend\open-books-backend" />
     </key>
@@ -254,16 +263,11 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/book/service/impl/BookServiceImpl.java</url>
           <line>181</line>
-          <properties class="edu.book.socialnetwork.service.impl.BookServiceImpl" method="returnBorrowedBook">
+          <properties class="edu.book.socialnetwork.domain.book.service.impl.BookServiceImpl" method="returnBorrowedBook">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/security/SecurityConfig.java</url>
-          <line>50</line>
-          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

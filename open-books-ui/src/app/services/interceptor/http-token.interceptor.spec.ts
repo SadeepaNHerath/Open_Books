@@ -1,11 +1,11 @@
 import { TestBed } from '@angular/core/testing';
 import { HttpInterceptorFn } from '@angular/common/http';
 
-import { httpTokenInterceptor } from './http-token.interceptor';
+import { HttpTokenInterceptor } from './http-token.interceptor';
 
 describe('httpTokenInterceptor', () => {
   const interceptor: HttpInterceptorFn = (req, next) => 
-    TestBed.runInInjectionContext(() => httpTokenInterceptor(req, next));
+    TestBed.runInInjectionContext(() => HttpTokenInterceptor(req, next));
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
