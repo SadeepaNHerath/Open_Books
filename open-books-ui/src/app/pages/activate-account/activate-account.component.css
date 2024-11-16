@@ -1,27 +1,50 @@
 .container {
-    margin-top: 50px;
+    background-color: #f8f9fa;
+    border-radius: 0.625rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    padding: 1.875rem;
 }
 
-.activation-message, .activation-error {
-    text-align: center;
-    margin-top: 20px;
+.activation-message,
+.activation-error {
+    padding: 1.25rem;
+    border-radius: 0.5rem;
 }
 
-.activation-message h2,
-.activation-error h2 {
-    color: #28a745; /* Green for success */
+.activation-message {
+    background-color: #d4edda;
+    color: #155724;
 }
 
-.activation-error h2 {
-    color: #dc3545; /* Red for error */
+.activation-error {
+    background-color: #f8d7da;
+    color: #721c24;
 }
 
-.btn-primary {
-    background-color: #007bff; /* Bootstrap primary color */
-    border-color: #007bff;
+h2 {
+    margin-bottom: 0.9375rem;
 }
 
-.btn-primary:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-    border-color: #0056b3;
+.lead {
+    margin-bottom: 1.25rem;
+}
+
+.btn {
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+code-input {
+    margin-top: 1.25rem;
+}
+
+
+@media (max-width: 36rem) {
+    .container {
+        width: 90%;
+    }
 }

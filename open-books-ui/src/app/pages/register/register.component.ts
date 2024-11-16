@@ -17,6 +17,7 @@ export class RegisterComponent {
 
   registerRequest: RegistrationRequest = { email: '', firstName: '', lastname: '', password: '' };
   errorMsg: Array<string> = [];
+  confirmPassword: any;
 
   constructor(
     private router: Router,
@@ -29,6 +30,10 @@ export class RegisterComponent {
 
   register() {
     this.errorMsg = [];
+    if (this.registerRequest.password!== this.confirmPassword) {
+      this.errorMsg.push('Passwords do not match');
+      return;
+    }
     this.authService.register({
       body: this.registerRequest
     })
