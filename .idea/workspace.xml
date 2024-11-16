@@ -5,20 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f657bc1-1999-474f-9374-9649f29e5407" name="Changes" comment="full format and improve imports">
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/backend/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/frontend/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/user/service/impl/JwtServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/user/service/impl/JwtServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/security/JwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/security/JwtFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-ui/src/app/services/interceptor/http-token.interceptor.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-ui/src/app/services/interceptor/http-token.interceptor.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-ui/src/app/services/interceptor/http-token.interceptor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-ui/src/app/services/interceptor/http-token.interceptor.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-books-ui/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-ui/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-books-ui/src/app/app.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-ui/src/app/app.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-books-ui/src/app/services/interceptor/http-token.interceptor.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-books-ui/src/app/services/interceptor/http-token.interceptor.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
