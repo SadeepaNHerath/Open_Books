@@ -4,17 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f657bc1-1999-474f-9374-9649f29e5407" name="Changes" comment="full format and improve imports">
+    <list default="true" id="2f657bc1-1999-474f-9374-9649f29e5407" name="Changes" comment="changed dependency">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-ui/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-ui/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-ui/src/app/modules/book/components/menu/menu.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-ui/src/app/modules/book/components/menu/menu.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-ui/src/app/pages/activate-account/activate-account.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-ui/src/app/pages/activate-account/activate-account.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-ui/src/app/pages/login/login.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-ui/src/app/pages/login/login.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-ui/src/app/pages/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-ui/src/app/pages/login/login.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-ui/src/app/pages/register/register.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-ui/src/app/pages/register/register.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-ui/src/app/pages/register/register.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-ui/src/app/pages/register/register.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-ui/src/app/pages/register/register.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-ui/src/app/pages/register/register.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-ui/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-ui/src/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +25,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;SadeepaNHerath&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="7ef4fc28-9583-4d72-8a42-8a8508ea605c" />
+        <option name="url" value="https://github.com/SadeepaNHerath/Open_Books.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -228,7 +233,23 @@
       <option name="project" value="LOCAL" />
       <updated>1731084939705</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="improve login + register + activate account pages">
+      <option name="closed" value="true" />
+      <created>1731747842159</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1731747842159</updated>
+    </task>
+    <task id="LOCAL-00010" summary="changed dependency">
+      <option name="closed" value="true" />
+      <created>1731995080412</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1731995080412</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -251,7 +272,9 @@
     <MESSAGE value="fixed errors in repositories + others" />
     <MESSAGE value="changed structure for domain-centric Structure" />
     <MESSAGE value="full format and improve imports" />
-    <option name="LAST_COMMIT_MESSAGE" value="full format and improve imports" />
+    <MESSAGE value="improve login + register + activate account pages" />
+    <MESSAGE value="changed dependency" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed dependency" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
