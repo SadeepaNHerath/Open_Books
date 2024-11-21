@@ -1,44 +1,168 @@
-div.card {
-    max-height: 28.125rem;
-    min-height: 28.125rem;
-}
-
-i {
-    cursor: pointer;
-}
-
 .book-card {
-    transition: all 0.3s ease;
-    border-width: 2px;
-  }
-  
-  .book-cover {
-    height: 200px;
-    object-fit: cover;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
-  }
-  
-  .synopsis {
-    font-size: 0.9rem;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  
-  .meta-info {
-    font-size: 0.9rem;
-  }
-  
-  .action-buttons button {
-    transition: transform 0.2s ease;
-  }
-  
-  .action-buttons button:hover {
-    transform: scale(1.2);
-  }
-  
-  .badge {
-    font-size: 0.8rem;
-    padding: 0.5em 0.7em;
-  }
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-width: 2px;
+  position: relative;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+.book-card:hover {
+  transform: translateY(-8px);
+}
+
+.book-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #4CAF50, #2196F3);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.book-card:hover::before {
+  transform: scaleX(1);
+}
+
+.book-cover {
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.book-card:hover .book-cover {
+  filter: brightness(1.1);
+}
+
+.badge {
+  font-size: 0.75rem;
+  padding: 0.5em 0.8em;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.badge.bg-success {
+  background: linear-gradient(45deg, #4CAF50, #45a049) !important;
+}
+
+.badge.bg-warning {
+  background: linear-gradient(45deg, #FFC107, #FFB300) !important;
+}
+
+.book-info {
+  position: relative;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 0.75rem;
+}
+
+.meta-info {
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+
+.meta-info p {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.meta-info i {
+  width: 20px;
+  text-align: center;
+  margin-right: 0.75rem;
+  transition: transform 0.3s ease;
+}
+
+.book-card:hover .meta-info i {
+  transform: scale(1.1);
+}
+
+.synopsis {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #495057;
+  display: -webkit-box;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-footer {
+  background: linear-gradient(to bottom, transparent, rgba(255,255,255,0.9));
+  border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+.action-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.action-buttons button {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  background: rgba(255,255,255,0.9);
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+.action-buttons button:hover {
+  transform: translateY(-2px) scale(1.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.action-buttons button i {
+  font-size: 1rem;
+}
+
+.btn-link.text-primary {
+  color: #2196F3 !important;
+}
+
+.btn-link.text-success {
+  color: #4CAF50 !important;
+}
+
+.btn-link.text-danger {
+  color: #f44336 !important;
+}
+
+.btn-link:hover.text-primary {
+  background: rgba(33, 150, 243, 0.1);
+}
+
+.btn-link:hover.text-success {
+  background: rgba(76, 175, 80, 0.1);
+}
+
+.btn-link:hover.text-danger {
+  background: rgba(244, 67, 54, 0.1);
+}
+
+app-rating {
+  display: inline-flex;
+  align-items: center;
+}
+
+.fw-bold.text-primary {
+  background: linear-gradient(45deg, #2196F3, #1976D2);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.1rem;
+}

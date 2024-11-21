@@ -49,7 +49,7 @@ export class LoginComponent {
   }
 
   forgotPassword() {
-    throw new Error('Method not implemented.');
+    this.router.navigate(['change-password']);
   }
 
 }

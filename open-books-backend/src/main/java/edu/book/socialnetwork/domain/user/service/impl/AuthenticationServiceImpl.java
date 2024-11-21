@@ -1,6 +1,7 @@
 package edu.book.socialnetwork.domain.user.service.impl;
 
 import edu.book.socialnetwork.domain.user.dto.request.AuthenticationRequest;
+import edu.book.socialnetwork.domain.user.dto.request.ChangePasswordRequest;
 import edu.book.socialnetwork.domain.user.dto.request.RegistrationRequest;
 import edu.book.socialnetwork.domain.user.dto.response.AuthenticationResponse;
 import edu.book.socialnetwork.domain.user.entity.RoleEntity;
@@ -106,6 +107,21 @@ public class AuthenticationServiceImpl implements AuthenticationService {
         userRepository.save(user);
         savedToken.setValidatedAt(java.time.LocalDateTime.now());
         tokenRepository.save(savedToken);
+    }
+
+    @Override
+    public void changePassword(ChangePasswordRequest request, Authentication connectedUser) {
+        UserEntity user = (UserEntity) ((UsernamePasswordAuthenticationToken) connectedUser).getPrincipal();
+
+        if (!passwordEncoder.matches(request.getCurrentPassword(), user.getPassword())) {
+            throw new IllegalStateException("Wrong password");
+        }
+        if (!request.getNewPassword().equals(request.getConfirmationPassword())) {
+            throw new IllegalStateException("Password are not the same");
+        }
+        user.setPassword(passwordEncoder.encode(request.getNewPassword()));
+
+        userRepository.save(user);
     }
 
     private String generateAndSaveActivationToken(UserEntity user) {

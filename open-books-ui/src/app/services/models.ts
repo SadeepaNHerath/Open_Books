@@ -7,6 +7,7 @@ export type { AuthenticationResponse } from './models/authentication-response';
 export type { BookRequest } from './models/book-request';
 export type { BookResponse } from './models/book-response';
 export type { BorrowedBookResponse } from './models/borrowed-book-response';
+export type { ChangePasswordRequest } from './models/change-password-request';
 export type { FeedbackRequest } from './models/feedback-request';
 export type { FeedbackResponse } from './models/feedback-response';
 export type { PageResponseBookResponse } from './models/page-response-book-response';

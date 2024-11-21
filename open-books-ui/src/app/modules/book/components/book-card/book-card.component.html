@@ -1,83 +1,88 @@
 <div class="card h-100 book-card" 
-         [class.border-success]="book.shareable"
-         [class.border-warning]="book.archived"
-         [class.shadow-sm]="!isHovered"
-         [class.shadow-lg]="isHovered"
-         (mouseenter)="isHovered = true"
-         (mouseleave)="isHovered = false">
-      <div class="position-relative">
-        <img [src]="bookCover" class="card-img-top book-cover" [alt]="book.title">
-        <div class="position-absolute top-0 end-0 m-2">
-          <span *ngIf="book.shareable" class="badge bg-success">Available</span>
-          <span *ngIf="book.archived" class="badge bg-warning text-dark">Archived</span>
-        </div>
+     [class.border-success]="book.shareable"
+     [class.border-warning]="book.archived"
+     [class.shadow-sm]="!isHovered"
+     [class.shadow-lg]="isHovered"
+     (mouseenter)="isHovered = true"
+     (mouseleave)="isHovered = false">
+  <div class="position-relative">
+    <img [src]="bookCover" class="card-img-top book-cover" [alt]="book.title">
+    <div class="position-absolute top-0 end-0 m-2">
+      <span *ngIf="book.shareable" class="badge bg-success">
+        <i class="fas fa-check-circle me-1"></i>Available
+      </span>
+      <span *ngIf="book.archived" class="badge bg-warning text-dark">
+        <i class="fas fa-archive me-1"></i>Archived
+      </span>
+    </div>
+  </div>
+  
+  <div class="card-body d-flex flex-column">
+    <div class="book-info mb-3">
+      <h5 class="card-title text-truncate mb-2">
+        <i class="fa-solid fa-book text-primary me-2"></i>
+        {{book.title}}
+      </h5>
+      <div class="meta-info">
+        <p class="card-subtitle mb-2">
+          <i class="fa-solid fa-user-check text-primary">  </i>
+          <span class="text-truncate"> {{ book.authorName }}</span>
+        </p>
+        <p class="card-subtitle mb-2">
+          <i class="fas fa-barcode text-primary">  </i>
+          <span class="font-monospace"> {{ book.isbn }}</span>
+        </p>
+        <p class="card-subtitle">
+          <i class="fas fa-user text-primary">  </i>
+          <span class="text-truncate"> {{ book.owner }}</span>
+        </p>
       </div>
-      <div class="card-body d-flex flex-column">
-        <div class="book-info mb-3">
-          <h5 class="card-title text-truncate mb-2">
-            <i class="fa-solid fa-book text-primary me-2"></i>
-            {{book.title}}
-          </h5>
-          <div class="meta-info">
-            <p class="card-subtitle mb-1 text-muted">
-              <i class="fa-solid fa-user-check text-secondary me-2"></i>
-              <span class="text-truncate">{{ book.authorName }}</span>
-            </p>
-            <p class="card-subtitle mb-1 text-muted">
-              <i class="fas fa-code text-secondary me-2"></i>
-              <span class="font-monospace">{{ book.isbn }}</span>
-            </p>
-            <p class="card-subtitle text-muted">
-              <i class="fas fa-user text-secondary me-2"></i>
-              <span class="text-truncate">{{ book.owner }}</span>
-            </p>
-          </div>
+    </div>
+    
+    <div class="synopsis-container flex-grow-1">
+      <hr class="my-2">
+      <p class="card-text synopsis">{{book.synopsis}}</p>
+    </div>
+    
+    <div class="card-footer border-top mt-3 p-0 pt-3 bg-transparent">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center gap-2">
+          <app-rating [rating]="book.rate || 0"></app-rating>
+          <span class="fw-bold text-primary" *ngIf="book.rate || 0 > 0">
+            {{book.rate}}
+          </span>
         </div>
         
-        <div class="synopsis-container flex-grow-1">
-          <hr class="my-2">
-          <p class="card-text synopsis">{{book.synopsis}}</p>
+        <div class="action-buttons" *ngIf="!manage">
+          <button class="btn btn-link text-primary" (click)="onShowDetails()" 
+                  title="Show Details">
+            <i class="fas fa-circle-info"></i>
+          </button>
+          <button class="btn btn-link text-success" (click)="onBorrow()"
+                  title="Borrow Book">
+            <i class="fas fa-list-check"></i>
+          </button>
+          <button class="btn btn-link text-danger" (click)="onAddToWaitingList()"
+                  title="Add to Wishlist">
+            <i class="fas fa-heart"></i>
+          </button>
         </div>
         
-        <div class="card-footer border-top mt-3 p-0 pt-3 bg-transparent">
-          <div class="d-flex justify-content-between align-items-center">
-            <div class="d-flex align-items-center gap-2">
-              <app-rating [rating]="book.rate || 0"></app-rating>
-              <span class="fw-bold text-primary" *ngIf="book.rate || 0 > 0">
-                {{book.rate}}
-              </span>
-            </div>
-            
-            <div class="action-buttons" *ngIf="!manage">
-              <button class="btn btn-link text-primary p-1" (click)="onShowDetails()" 
-                      title="Show Details">
-                <i class="fas fa-circle-info"></i>
-              </button>
-              <button class="btn btn-link text-success p-1" (click)="onBorrow()"
-                      title="Borrow">
-                <i class="fas fa-list-check"></i>
-              </button>
-              <button class="btn btn-link text-danger p-1" (click)="onAddToWaitingList()"
-                      title="Add to Wishlist">
-                <i class="fas fa-heart"></i>
-              </button>
-            </div>
-            
-            <div class="action-buttons" *ngIf="manage">
-              <button class="btn btn-link text-success p-1" (click)="onEdit()"
-                      title="Edit">
-                <i class="fas fa-edit"></i>
-              </button>
-              <button class="btn btn-link text-primary p-1" (click)="onShare()"
-                      title="Share">
-                <i class="fas fa-share-nodes"></i>
-              </button>
-              <button class="btn btn-link text-danger p-1" (click)="onArchive()"
-                      title="Archive">
-                <i class="fas fa-archive"></i>
-              </button>
-            </div>
-          </div>
+        <div class="action-buttons" *ngIf="manage">
+          <button class="btn btn-link text-success" (click)="onEdit()"
+                  title="Edit Book">
+            <i class="fas fa-edit"></i>
+          </button>
+          <button class="btn btn-link text-primary" (click)="onShare()"
+                  title="Share Book">
+            <i class="fas fa-share-nodes"></i>
+          </button>
+          <button class="btn btn-link text-danger" (click)="onArchive()"
+                  title="Archive Book">
+            <i class="fas fa-archive"></i>
+          </button>
         </div>
       </div>
     </div>
+  </div>
+</div>

@@ -1,6 +1,7 @@
 package edu.book.socialnetwork.domain.user.controller;
 
 import edu.book.socialnetwork.domain.user.dto.request.AuthenticationRequest;
+import edu.book.socialnetwork.domain.user.dto.request.ChangePasswordRequest;
 import edu.book.socialnetwork.domain.user.dto.request.RegistrationRequest;
 import edu.book.socialnetwork.domain.user.dto.response.AuthenticationResponse;
 import edu.book.socialnetwork.domain.user.service.AuthenticationService;
@@ -10,6 +11,7 @@ import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 
 @CrossOrigin(origins = "http://localhost:4200")
@@ -36,5 +38,11 @@ public class AuthenticationController {
     @GetMapping("activate-account")
     public void confirm(@RequestParam String token) throws MessagingException {
         authenticationService.activateAccount(token);
+    }
+
+    @PatchMapping
+    public ResponseEntity<?> changePassword(@RequestBody ChangePasswordRequest request, Authentication connectedUser) {
+        authenticationService.changePassword(request, connectedUser);
+        return ResponseEntity.ok().build();
     }
 }
