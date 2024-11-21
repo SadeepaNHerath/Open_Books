@@ -33,15 +33,15 @@ public class EmailServiceImpl implements EmailService {
             String activationCode,
             String subject
     ) throws MessagingException {
-        String templateName;
-        if (emailTemplateName == null){
-            templateName = "confirmation-email";
-        }else {
-            templateName = emailTemplateName.name();
+        if (to == null || to.isEmpty()) {
+            throw new IllegalArgumentException("Recipient email address cannot be null or empty.");
         }
+
+        String templateName = (emailTemplateName == null) ? "confirmation-email" : emailTemplateName.name();
 
         MimeMessage mimeMessage = javaMailSender.createMimeMessage();
         MimeMessageHelper helper = new MimeMessageHelper(mimeMessage, MimeMessageHelper.MULTIPART_MODE_MIXED, StandardCharsets.UTF_8.name());
+
         Map<String, Object> properties = new HashMap<>();
         properties.put("username", username);
         properties.put("confirmationUrl", confirmationUrl);
@@ -57,4 +57,5 @@ public class EmailServiceImpl implements EmailService {
 
         javaMailSender.send(mimeMessage);
     }
+
 }

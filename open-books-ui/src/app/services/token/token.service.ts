@@ -9,8 +9,16 @@ export class TokenService {
     localStorage.setItem('token', token);
   }
 
+  set name(name: string) {
+    localStorage.setItem('user', name);
+  }
+
   get token() {
     return localStorage.getItem('token') as string;
+  }
+
+  get name() {
+    return localStorage.getItem('user') as string;
   }
 
   isTokenValid() {

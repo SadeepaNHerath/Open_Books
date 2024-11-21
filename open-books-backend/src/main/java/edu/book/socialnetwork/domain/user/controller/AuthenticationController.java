@@ -40,9 +40,10 @@ public class AuthenticationController {
         authenticationService.activateAccount(token);
     }
 
-    @PatchMapping
+    @PatchMapping("/change-password" + "/{id}")
     public ResponseEntity<?> changePassword(@RequestBody ChangePasswordRequest request, Authentication connectedUser) {
         authenticationService.changePassword(request, connectedUser);
         return ResponseEntity.ok().build();
     }
+
 }

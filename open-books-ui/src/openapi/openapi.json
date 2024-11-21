@@ -385,7 +385,7 @@
         }
       }
     },
-    "/auth": {
+    "/auth/change-password/{id}": {
       "patch": {
         "tags": [
           "Authentication"
@@ -747,6 +747,9 @@
         "type": "object",
         "properties": {
           "token": {
+            "type": "string"
+          },
+          "name": {
             "type": "string"
           }
         }

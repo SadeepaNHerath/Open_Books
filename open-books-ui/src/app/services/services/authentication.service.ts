@@ -82,7 +82,7 @@ export class AuthenticationService extends BaseService {
   }
 
   /** Path part for operation `changePassword()` */
-  static readonly ChangePasswordPath = '/auth';
+  static readonly ChangePasswordPath = '/auth/change-password/{id}';
 
   /**
    * This method provides access to the full `HttpResponse`, allowing access to response headers.

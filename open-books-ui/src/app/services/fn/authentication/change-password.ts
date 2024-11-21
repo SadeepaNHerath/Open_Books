@@ -32,4 +32,4 @@ export function changePassword(http: HttpClient, rootUrl: string, params: Change
   );
 }
 
-changePassword.PATH = '/auth';
+changePassword.PATH = '/auth/change-password/{id}';

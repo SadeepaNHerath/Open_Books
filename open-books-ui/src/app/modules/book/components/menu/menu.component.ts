@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { AuthenticationService } from '../../../../services/services';
 
 @Component({
   selector: 'app-menu',
@@ -9,6 +10,8 @@ import { RouterLink } from '@angular/router';
   styleUrl: './menu.component.css'
 })
 export class MenuComponent implements OnInit {
+
+  username: String | null =null;
 
   ngOnInit(): void {
     const linkColor: NodeListOf<Element> = document.querySelectorAll('.nav-link');
@@ -21,11 +24,14 @@ export class MenuComponent implements OnInit {
         link.classList.add('active');
       });
     });
+
+    this.username = localStorage.getItem('user');
   }
 
 
   logout() {
     localStorage.removeItem('token');
+    localStorage.removeItem('user');
     window.location.reload();
   }
 

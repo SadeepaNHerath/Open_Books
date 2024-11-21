@@ -17,17 +17,14 @@ spring:
     host: smtp.gmail.com
     port: 587
     username: sadeepahearth@gmail.com
-    password: pcnfidsjlrvgrdoj
+    password:
     properties:
-      mail:
-        smtp:
-          trust: "*"
-        auth: true
-        starttls:
-          enabled: true
-        connectiontimeout: 5000
-        timeout: 3000
-        writetimeout: 5000
+      mail.smtp.auth: true
+      mail.smtp.starttls.enable: true
+      mail.smtp.starttls.required: true
+      mail.smtp.connectiontimeout: 5000
+      mail.smtp.timeout: 3000
+      mail.smtp.writetimeout: 5000
 application:
   security:
     jwt:
@@ -41,5 +38,4 @@ application:
       photos-output-path: ./uploads
 server:
   port: 8088
-  tomcat:
-    max-http-header-size: 1048576
+  max-http-header-size: 1638400
