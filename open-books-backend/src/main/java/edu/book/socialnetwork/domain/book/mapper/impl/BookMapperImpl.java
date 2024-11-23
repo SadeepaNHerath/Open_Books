@@ -1,6 +1,6 @@
 package edu.book.socialnetwork.domain.book.mapper.impl;
 
-import edu.book.socialnetwork.common.util.FileUtils;
+import edu.book.socialnetwork.domain.storage.util.FileUtils;
 import edu.book.socialnetwork.domain.book.dto.request.BookRequest;
 import edu.book.socialnetwork.domain.book.dto.response.BookResponse;
 import edu.book.socialnetwork.domain.book.dto.response.BorrowedBookResponse;

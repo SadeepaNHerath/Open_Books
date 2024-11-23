@@ -1,4 +1,4 @@
-package edu.book.socialnetwork.common.util;
+package edu.book.socialnetwork.domain.storage.util;
 
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
