@@ -1,10 +1,22 @@
 .login-page {
   min-height: 100vh;
-  background: linear-gradient(135deg, #6B73FF 0%, #000DFF 100%);
+  background: url('E:/Projects/open-books/open-books-ui/public/img/backImg.png');
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 2rem;
+}
+
+.login-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: 400px;
+  opacity: 0.03;
+  pointer-events: none;
 }
 
 .login-container {

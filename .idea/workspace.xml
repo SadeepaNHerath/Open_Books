@@ -4,26 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f657bc1-1999-474f-9374-9649f29e5407" name="Changes" comment="changed dependency">
+    <list default="true" id="2f657bc1-1999-474f-9374-9649f29e5407" name="Changes" comment="changed file location of fileUtils">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/user/controller/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/user/controller/AuthenticationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/user/dto/response/AuthenticationResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/user/dto/response/AuthenticationResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/user/service/impl/AuthenticationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/user/service/impl/AuthenticationServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/user/service/impl/EmailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/java/edu/book/socialnetwork/domain/user/service/impl/EmailServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hs_err_pid9036.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-backend/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-backend/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-ui/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-ui/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-ui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-ui/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-ui/src/app/modules/book/components/menu/menu.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-ui/src/app/modules/book/components/menu/menu.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-ui/src/app/modules/book/components/menu/menu.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-ui/src/app/modules/book/components/menu/menu.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-ui/src/app/pages/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-ui/src/app/pages/login/login.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-ui/src/app/services/fn/authentication/change-password.ts" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-ui/src/app/services/fn/authentication/change-password.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-ui/src/app/services/inteceptor/http-token.interceptor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-ui/src/app/services/inteceptor/http-token.interceptor.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-ui/src/app/services/models/authentication-response.ts" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-ui/src/app/services/models/authentication-response.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-ui/src/app/services/services/authentication.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-ui/src/app/services/services/authentication.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-ui/src/app/services/token/token.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-ui/src/app/services/token/token.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open-books-ui/src/openapi/openapi.json" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-ui/src/openapi/openapi.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-books-ui/src/app/modules/book/pages/book-list/book-list.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-ui/src/app/modules/book/pages/book-list/book-list.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-books-ui/src/app/modules/book/pages/borrowed-book-list/borrowed-book-list.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-ui/src/app/modules/book/pages/borrowed-book-list/borrowed-book-list.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-books-ui/src/app/modules/book/pages/borrowed-book-list/borrowed-book-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-ui/src/app/modules/book/pages/borrowed-book-list/borrowed-book-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-books-ui/src/app/modules/book/pages/manage-books/manage-books.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-ui/src/app/modules/book/pages/manage-books/manage-books.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-books-ui/src/app/modules/book/pages/manage-books/manage-books.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-ui/src/app/modules/book/pages/manage-books/manage-books.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-books-ui/src/app/modules/book/pages/my-books/my-books.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-ui/src/app/modules/book/pages/my-books/my-books.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-books-ui/src/app/modules/book/pages/my-books/my-books.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-ui/src/app/modules/book/pages/my-books/my-books.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-books-ui/src/app/modules/book/pages/returned-books/returned-books.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-ui/src/app/modules/book/pages/returned-books/returned-books.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-books-ui/src/app/modules/book/pages/returned-books/returned-books.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-ui/src/app/modules/book/pages/returned-books/returned-books.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-books-ui/src/app/pages/activate-account/activate-account.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-ui/src/app/pages/activate-account/activate-account.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-books-ui/src/app/pages/change-password/change-password.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-ui/src/app/pages/change-password/change-password.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-books-ui/src/app/pages/login/login.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-ui/src/app/pages/login/login.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-books-ui/src/app/pages/register/register.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-ui/src/app/pages/register/register.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open-books-ui/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/open-books-ui/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/replay_pid9036.log" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -267,7 +266,23 @@
       <option name="project" value="LOCAL" />
       <updated>1731995080412</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="email send success">
+      <option name="closed" value="true" />
+      <created>1732200678471</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1732200678471</updated>
+    </task>
+    <task id="LOCAL-00012" summary="changed file location of fileUtils">
+      <option name="closed" value="true" />
+      <created>1732327720540</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1732327720540</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -292,7 +307,9 @@
     <MESSAGE value="full format and improve imports" />
     <MESSAGE value="improve login + register + activate account pages" />
     <MESSAGE value="changed dependency" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed dependency" />
+    <MESSAGE value="email send success" />
+    <MESSAGE value="changed file location of fileUtils" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed file location of fileUtils" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
