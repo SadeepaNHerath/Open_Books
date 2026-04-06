@@ -1,0 +1,37 @@
+# IDEs and Editors
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+.settings/
+.project
+.classpath
+
+# Build and Dependencies
+target/
+node_modules/
+dist/
+out/
+build/
+.angular/
+
+# Logs and system files
+*.log
+.DS_Store
+Thumbs.db
+hs_err_pid*
+replay_pid*
+
+# Maven wrapper
+.mvn/wrapper/maven-wrapper.jar
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Optional: if you want to keep subprojects gitignores but the root should cover them
+# open-books-backend/target/
+# open-books-ui/node_modules/
+# open-books-ui/dist/
