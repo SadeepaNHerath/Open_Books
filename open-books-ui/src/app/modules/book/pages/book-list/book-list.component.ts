@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BookService } from '../../../../services/services/book.service';
 import { Router } from '@angular/router';
 import { BookResponse, PageResponseBookResponse } from '../../../../services/models';
@@ -8,7 +9,7 @@ import { BookCardComponent } from '../../components/book-card/book-card.componen
 @Component({
   selector: 'app-book-list',
   standalone: true,
-  imports: [CommonModule, BookCardComponent],
+  imports: [CommonModule, FormsModule, BookCardComponent],
   templateUrl: './book-list.component.html',
   styleUrl: './book-list.component.css'
 })
@@ -18,6 +19,7 @@ export class BookListComponent implements OnInit {
   page: number = 0;
   size: number = 5;
   pages: any = [];
+  searchTerm = '';
   message = '';
   level: 'success' | 'error' = 'success';
 
@@ -34,12 +36,26 @@ export class BookListComponent implements OnInit {
   private findAllBooks() {
     this.bookService.findAllBooks({
       page: this.page,
-      size: this.size
+      size: this.size,
+      search: this.searchTerm.trim()
     }).subscribe({
       next: (books) => {
         this.bookResponse = books;
+        this.pages = Array(this.bookResponse.totalPages || 0)
+          .fill(0)
+          .map((x, i) => i);
       }
     })
+  }
+
+  searchBooks() {
+    this.page = 0;
+    this.findAllBooks();
+  }
+
+  clearSearch() {
+    this.searchTerm = '';
+    this.searchBooks();
   }
 
   goToFirstPage() {

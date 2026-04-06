@@ -1,4 +1,19 @@
 <h3>Books list</h3>
+<div class="row mb-3">
+  <div class="col-12 col-md-8 col-lg-6">
+    <div class="input-group">
+      <input
+        type="search"
+        class="form-control"
+        placeholder="Search by title, author, or ISBN"
+        [(ngModel)]="searchTerm"
+        (keyup.enter)="searchBooks()"
+      />
+      <button class="btn btn-primary" type="button" (click)="searchBooks()">Search</button>
+      <button class="btn btn-outline-secondary" type="button" (click)="clearSearch()">Clear</button>
+    </div>
+  </div>
+</div>
 <div
   *ngIf="message"
   class="alert "

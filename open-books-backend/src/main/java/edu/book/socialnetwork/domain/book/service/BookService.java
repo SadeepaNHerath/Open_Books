@@ -12,7 +12,7 @@ public interface BookService {
 
     BookResponse findById(Integer bookId);
 
-    PageResponse<BookResponse> findAllBooks(int page, int size, Authentication connectedUser);
+    PageResponse<BookResponse> findAllBooks(int page, int size, String search, Authentication connectedUser);
 
     PageResponse<BookResponse> findAllBooksByOwner(int page, int size, Authentication connectedUser);
 

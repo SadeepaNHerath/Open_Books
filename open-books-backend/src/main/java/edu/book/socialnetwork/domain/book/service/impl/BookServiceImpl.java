@@ -52,10 +52,10 @@ public class BookServiceImpl implements BookService {
     }
 
     @Override
-    public PageResponse<BookResponse> findAllBooks(int page, int size, Authentication connectedUser) {
+    public PageResponse<BookResponse> findAllBooks(int page, int size, String search, Authentication connectedUser) {
         UserEntity user = ((UserEntity) connectedUser.getPrincipal());
         Pageable pageable = PageRequest.of(page, size, Sort.by("createdDate").descending());
-        Page<BookEntity> books = bookRepository.findAllDisplayableBooks(pageable, user.getId());
+        Page<BookEntity> books = bookRepository.findAllDisplayableBooks(pageable, user.getId(), search == null ? "" : search.trim());
         List<BookResponse> bookResponses = books.stream()
                 .map(bookMapperService::toBookResponse)
                 .toList();

@@ -16,6 +16,12 @@ public interface BookRepository extends JpaRepository<BookEntity, Integer>, JpaS
             WHERE book.archived = false
             AND book.shareable = true
             AND book.owner.id != :userId
+            AND (
+                :search IS NULL OR :search = ''
+                OR LOWER(book.title) LIKE LOWER(CONCAT('%', :search, '%'))
+                OR LOWER(book.authorName) LIKE LOWER(CONCAT('%', :search, '%'))
+                OR LOWER(book.isbn) LIKE LOWER(CONCAT('%', :search, '%'))
+            )
             """)
-    Page<BookEntity> findAllDisplayableBooks(Pageable pageable, @Param("userId") Integer userId);
+    Page<BookEntity> findAllDisplayableBooks(Pageable pageable, @Param("userId") Integer userId, @Param("search") String search);
 }

@@ -35,7 +35,7 @@ export class BookCardComponent {
 
   get bookCover(): string | undefined {
     if (this._book.cover) {
-      return 'data.image/jpeg;base64,' + this._book.cover;
+      return 'data:image/jpeg;base64,' + this._book.cover;
 
     }
     return 'https://fastly.picsum.photos/id/84/200/300.jpg?grayscale';
