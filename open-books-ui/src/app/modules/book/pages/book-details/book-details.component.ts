@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, RouterLink } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { BookService } from '../../../../services/services/book.service';
 import { FeedbackService } from '../../../../services/services/feedback.service';
 import { BookResponse, PageResponseFeedbackResponse } from '../../../../services/models';
@@ -9,7 +9,7 @@ import { RatingComponent } from '../../components/rating/rating.component';
 @Component({
   selector: 'app-book-details',
   standalone: true,
-  imports: [CommonModule, RouterLink, RatingComponent],
+  imports: [CommonModule, RatingComponent],
   templateUrl: './book-details.component.html',
   styleUrl: './book-details.component.css'
 })
